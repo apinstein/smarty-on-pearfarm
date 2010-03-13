@@ -14,4 +14,5 @@ tar -zxf $dlfile -C smarty-to-package --wildcards "Smarty-*/libs/*"
 cp pearfarm.spec "smarty-to-package/Smarty-${SMARTY_VERSION}/libs"
 pushd "smarty-to-package/Smarty-${SMARTY_VERSION}/libs"
 pearfarm build
+pearfarm push
 popd
