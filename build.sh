@@ -1,5 +1,9 @@
 #!/bin/sh
 export SMARTY_VERSION=$1
+if [ -z $SMARTY_VERSION ]; then
+    echo "Usage: build.sh X.Y.ZZZ\n You must pass in the desired smarty version."
+    exit 1
+fi
 echo "Publishing Smarty version ${SMARTY_VERSION} to pearfarm..."
 dlfile="Smarty-${SMARTY_VERSION}-source.tgz"
 dlurl="http://www.smarty.net/do_download.php?download_file=Smarty-${SMARTY_VERSION}.tar.gz"

@@ -20,7 +20,7 @@ $spec = Pearfarm_PackageSpec::create(array(Pearfarm_PackageSpec::OPT_BASEDIR => 
              ->setApiVersion($version)
              ->setApiStability($stability)
              ->setLicense(Pearfarm_PackageSpec::LICENSE_LGPL)
-             ->setNotes('This is a meta-package to provide a pear-installable smarty.')
+             ->setNotes('This is a meta-package to provide a pear-installable smarty. See http://github.com/apinstein/smarty-on-pearfarm.')
              ->addMaintainer('lead', 'Alan Pinstein', 'apinstein', 'apinstein@mac.com')
              ->addFilesRegex('/.*/', Pearfarm_PackageSpec::ROLE_PHP, array(Pearfarm_PackageSpecFile::BASEINSTALLDIR => 'Smarty'))
              ->addExcludeFiles('pearfarm.spec')
